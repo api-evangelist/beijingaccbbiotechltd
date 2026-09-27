@@ -1,23 +1,69 @@
 aid: beijingaccbbiotechltd
+
 name: Beijingaccbbiotechltd
-description: 'Beijingaccbbiotechltd is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://accbiotech.com/site/assets/images/og-image.png
+
+description: 'ACC Biotech Limited (北京雅康博生物科技有限公司) is a Hong‑Kong based professional health‑supplement OEM/ODM manufacturer. It offers end‑to‑end services from formulation design, global ingredient sourcing, production, packaging and regulatory compliance, serving clients worldwide. The company also provides patented ingredient development and a range of supplement dosage forms.'
+
 url: https://raw.githubusercontent.com/api-evangelist/beijingaccbbiotechltd/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: The company website provides no developer documentation or API reference.
+  evidence:
+    - url: https://accbiotech.com
+      status: 200
+  checked: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Health Supplements
+- OEM
+- ODM
+- Hong Kong
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/beijingaccbbiotechltd-hosts.yml
+- type: Vendors
+  url: vendors/beijingaccbbiotechltd-vendors.yml
+- type: TermsOfService
+  url: https://accbiotech.com/tc/terms-of-service
+- type: PrivacyPolicy
+  url: https://accbiotech.com/tc/privacy-policy
+- type: Blog
+  url: https://accbiotech.com/tc/blog
+- type: DomainSecurity
+  url: security/beijingaccbbiotechltd-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/beijingaccbbiotechltd
+  url: https://accbiotech.com
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
